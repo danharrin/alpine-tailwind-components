@@ -141,7 +141,7 @@
                     },
 
                     focusNextOption: function () {
-                        if (this.focusedObjectIndex === null) return this.focusedObjectIndex = Object.keys(this.options).length - 1
+                        if (this.focusedOptionIndex === null) return this.focusedOptionIndex = Object.keys(this.options).length - 1
 
                         if (this.focusedOptionIndex + 1 >= Object.keys(this.options).length) return
 
@@ -153,7 +153,7 @@
                     },
 
                     focusPreviousOption: function () {
-                        if (this.focusedObjectIndex === null) return this.focusedObjectIndex = 0
+                        if (this.focusedOptionIndex === null) return this.focusedOptionIndex = 0
 
                         if (this.focusedOptionIndex <= 0) return
 
